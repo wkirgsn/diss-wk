@@ -4,7 +4,7 @@ Code, documentation, and figures for the dissertation of Wilhelm Kirchgässner.
 The dissertation is currently under survey and will be published as soon as it was defended.
 Until then, code and notebooks are already hosted here whereas the dissertation PDF itself will be uploaded after it was published.
 
-## Folder Structure
+## Folder Structure and Code
 ```
 .
 ├── LICENSE
@@ -46,6 +46,11 @@ The runner scripts have to be executed in order to train and cross-validate vari
 
 On the other hand, the jupyter notebooks merely visualize those dumped results, that is, no training and a minimum of inference is conducted there.
 
+Runner scripts that start with `run_` will conduct a single experiment, whereas those that start with `hpo_` will conduct many experiments for a hyperparameter optimization.
+Configuration for all experiments are usually in the runner scripts themselves.
+Thus, in order to fill the database with all information expected by each cell in all notebooks will require several different configurations in the runner scripts.
+Those should be evident by commented-out-code.
+
 ## Data 
 The database is a local SQLITE DB, although the original research was conducted with a PostgreSQL DB on a server. 
 The local DB is a means to enable reproducable code for fellow researchers and practitioners without access to a server with a PostgreSQL database management system.
@@ -57,12 +62,6 @@ The code expects this CSV to be located under `data/input/`.
 The LPTN code partly needs additional data sets (two .mat files), that can be also found under `data/input/`.
 
 All results from runner scripts will be stored under `data/output/`.
-
-## Code
-Runner scripts that start with `run_` will conduct a single experiment, whereas those that start with `hpo_` will conduct many experiments for a hyperparameter optimization.
-Configuration for all experiments are usually in the runner scripts themselves.
-Thus, in order to fill the database with all information expected by each cell in all notebooks will require several different configurations in the runner scripts.
-Those should be evident by commented-out-code.
 
 ## Feedback / Troubleshooting
 Please feel free to open up a GitHub issue for questions or concerns regarding this code base.
