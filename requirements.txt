@@ -1,0 +1,14 @@
+# Python 3.9
+torch
+scikit-learn
+pandas
+polars
+lightgbm
+sshtunnel
+optuna==2.10.0
+psycopg2-binary==2.9.3
+seaborn
+scipy
+jupyter
+statsmodels
+
