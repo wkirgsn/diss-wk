@@ -15,7 +15,7 @@ import subprocess
 from pprint import pprint
 
 from mawkutils.topology import (AdjointConformTNN, DifferenceEqLayer,
-                                TNNCell, ElSystemResponseCell, ExplEulerCell, CaplessTNNCell, SingleSubNNTNNCell,
+                                TNNCell, ExplEulerCell, CaplessTNNCell, SingleSubNNTNNCell,
                                 ResidualLSTM, ResidualGRU, TemporalConvNet, LPTNTorch)
 from mawkutils.data import DBManager, KaggleDataSet, add_mov_stats
 from mawkutils.validation import generate_tensor, SampleWeightedMSELoss, calc_metrics
