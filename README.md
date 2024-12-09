@@ -1,8 +1,7 @@
 # diss-wk
 Code, documentation, and figures for the dissertation of Wilhelm Kirchgässner.
 
-The dissertation is currently under survey and will be published as soon as it was defended.
-Until then, code and notebooks are already hosted here whereas the dissertation PDF itself will be uploaded after it was published.
+The dissertation PDF is freely available at [UPB digital library](https://digital.ub.uni-paderborn.de/doi/10.17619/UNIPB/1-2068)
 
 ## Folder Structure and Code
 ```
